@@ -38,7 +38,7 @@ function Option:unwrap_or_else(default_func)
   if self:is_some() then
     return self.val
   end
-  return default_function()
+  return default_func()
 end
 
 function Option:fallback(alternate_value)
